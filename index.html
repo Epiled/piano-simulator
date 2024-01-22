@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Piano Simulator</title>
 
+  <meta name="description" content="Simulador de Piano">
+
+  <link rel="shortcut icon" href="/piano/src/assets/favicon.png" type="image/x-icon">
+
   <!-- styles -->
   <link rel="stylesheet" href="./src/styles/reset.css">
   <link rel="stylesheet" href="./src/styles/main.css">
@@ -13,7 +17,7 @@
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+  <link async href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet preload">
 </head>
 
 <body>
@@ -23,12 +27,12 @@
     <header class="menu">
       <h2>Virtual Piano</h2>
       <div class="column volume-slider">
-        <span>Volume</span>
-        <input type="range" min="0" max="1" value="0.5" step="any" name="" id="">
+        <label for="volume">Volume</label>
+        <input type="range" min="0" max="1" value="0.5" step="any" name="volume" id="volume">
       </div>
       <div class="column keys-check">
-        <span>Teclas</span>
-        <input type="checkbox" checked name="" id="">
+        <label for="teclas">Teclas</label>
+        <input type="checkbox" checked name="teclas" id="teclas">
       </div>
     </header>
 
