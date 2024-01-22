@@ -1,0 +1,13 @@
+:root {
+  --color-white-default: #fff;
+  --color-white-alt: #eee;
+  --color-black-default: #000;
+  --color-gray-clear-1: #b2b2b2;
+  --color-gray-clear-2: #a2a2a2;
+  --color-gray-clear-3: #8c8c8c;
+  --color-gray-dark-1: #4b4b4b;
+  --color-gray-dark-2: #434343;
+  --color-gray-dark-3: #333;
+  --color-sombra-1: #00000033;
+  --color-sombra-2: #ffffff1a;
+}
