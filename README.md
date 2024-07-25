@@ -7,6 +7,8 @@ Projeto do bootcamp Potêncial tech Ifood - Desenvolvimento de Jogos, patrocidad
 | :sparkles: Nome        | **Piano Simulator**
 | :label: Tecnologias | html, css, js
 
+![Banner-piano](https://github.com/user-attachments/assets/4efbcce3-fa47-4d6b-97e1-cd59619a9c8f)
+
 <h2 id="detalhes-do-projeto"> 📃 Detalhes do projeto </h2>
 
 Simulador de piano desenvolvido utilizando tecnologias web, como html, css e javascript.
@@ -26,11 +28,16 @@ Simulador de piano desenvolvido utilizando tecnologias web, como html, css e jav
 
 <!--ts-->
    * [Detalhes do projeto](#detalhes-do-projeto)
+   * [Demonstração](#demonstracao)
    * [Instalação](#instalacao)
    * [Como usar](#como-usar)
    * [Tecnologias](#tecnologias)
    * [Autor](#autor)
 <!--te-->
+
+<h2 id="demonstracao"> 👀 Demonstração </h2>
+
+https://github.com/user-attachments/assets/80110ff2-7dd2-4d95-8fc3-5bd01e95672d
 
 <h2 id="instalacao"> ⚙ Instalação </h2>
 
