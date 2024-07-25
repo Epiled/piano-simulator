@@ -1,0 +1,63 @@
+.changeColor {
+  position: absolute;
+  width: min-content;
+  top: -1.5rem;
+  left: 4rem;
+  z-index: 1;
+}
+
+.changeColor__btn {
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  cursor: pointer;
+  transition: all .5s;
+  z-index: 5;
+  border: .3rem solid black;
+}
+
+.changeColor__btn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.changeColor__options {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.changeColor__ipt {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0;
+  top: 0;
+  left: 0;
+  transition: top .5s, left .5s;
+}
+
+.changeColor__ipt:nth-child(1)[data-changecoloript="true"] {
+  top: -2rem;
+  left: -3rem;
+  accent-color: #232323;
+}
+
+.changeColor__ipt:nth-child(2)[data-changecoloript="true"] {
+  top: -3.5rem;
+  left: 0rem;
+  accent-color: #1e7e00;
+}
+
+.changeColor__ipt:nth-child(3)[data-changecoloript="true"] {
+  top: -2rem;
+  left: 3rem;
+  accent-color: #a70094;
+}

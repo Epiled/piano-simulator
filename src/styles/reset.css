@@ -145,6 +145,10 @@ table {
   font-size: 62.5%;
 }
 
+body {
+  transition: background 2s;
+}
+
 * {
   box-sizing: border-box;
   outline: none;

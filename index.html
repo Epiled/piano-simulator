@@ -1,64 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-bt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piano Simulator</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Piano Simulator</title>
+    <meta name="description" content="Simulador de Piano" />
 
-  <meta name="description" content="Simulador de Piano">
+    <link
+      rel="shortcut icon"
+      href="./src/assets/favicon.png"
+      type="image/x-icon"
+    />
 
-  <link rel="shortcut icon" href="./src/assets/favicon.png" type="image/x-icon">
+    <!-- styles -->
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
 
-  <!-- styles -->
-  <link rel="stylesheet" href="./src/styles/reset.css">
-  <link rel="stylesheet" href="./src/styles/main.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet preload prefetch"
+      as="style"
+      crossorigin="anonymous"
+    />
+  </head>
 
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet preload prefetch" as="style" crossorigin="anonymous">
-</head>
-
-<body>
-
-  <div class="container">
-
-    <header class="menu">
-      <h2>Virtual Piano</h2>
-      <div class="column volume-slider">
-        <label for="volume">Volume</label>
-        <input type="range" min="0" max="1" value="0.5" step="any" name="volume" id="volume">
+  <body>
+    <div class="container">
+      <div class="changeColor">
+        <button class="changeColor__btn" data-changeColor></button>
+        <div class="changeColor__options">
+          <input
+            class="changeColor__ipt"
+            name="iptColor"
+            checked
+            value="default"
+            data-changeColorIpt="false"
+            type="radio"
+          />
+          <input
+            class="changeColor__ipt"
+            name="iptColor"
+            value="green"
+            data-changeColorIpt="false"
+            type="radio"
+          />
+          <input
+            class="changeColor__ipt"
+            name="iptColor"
+            value="pink"
+            data-changeColorIpt="false"
+            type="radio"
+          />
+        </div>
       </div>
-      <div class="column keys-check">
-        <label for="teclas">Teclas</label>
-        <input type="checkbox" checked name="teclas" id="teclas">
+      <div class="container__piano" data-piano>
+        <header class="menu" data-menu>
+          <h2 data-text>Virtual Piano</h2>
+          <div class="column volume-slider">
+            <label for="volume" data-text>Volume</label>
+            <input
+              type="range"
+              min="0"
+              max="1"
+              value="0.5"
+              step="any"
+              name="volume"
+              id="volume"
+            />
+          </div>
+          <div class="column keys-check">
+            <label for="teclas" data-text>Teclas</label>
+            <input type="checkbox" checked name="teclas" id="teclas" />
+          </div>
+        </header>
+
+        <ul class="piano-keys">
+          <li class="key white" data-key="a"><span>a</span></li>
+          <li class="key black" data-key="w"><span>w</span></li>
+          <li class="key white" data-key="s"><span>s</span></li>
+          <li class="key black" data-key="e"><span>e</span></li>
+          <li class="key white" data-key="d"><span>d</span></li>
+          <li class="key black" data-key="f"><span>f</span></li>
+          <li class="key white" data-key="t"><span>t</span></li>
+          <li class="key black" data-key="g"><span>g</span></li>
+          <li class="key white" data-key="y"><span>y</span></li>
+          <li class="key black" data-key="h"><span>h</span></li>
+          <li class="key white" data-key="u"><span>u</span></li>
+          <li class="key black" data-key="j"><span>j</span></li>
+          <li class="key white" data-key="k"><span>k</span></li>
+          <li class="key black" data-key="o"><span>o</span></li>
+          <li class="key white" data-key="l"><span>l</span></li>
+          <li class="key black" data-key="p"><span>p</span></li>
+          <li class="key white" data-key=";"><span>;</span></li>
+        </ul>
       </div>
-    </header>
+    </div>
 
-    <ul class="piano-keys">
-      <li class="key white" data-key="a"><span>a</span></li>
-      <li class="key black" data-key="w"><span>w</span></li>
-      <li class="key white" data-key="s"><span>s</span></li>
-      <li class="key black" data-key="e"><span>e</span></li>
-      <li class="key white" data-key="d"><span>d</span></li>
-      <li class="key black" data-key="f"><span>f</span></li>
-      <li class="key white" data-key="t"><span>t</span></li>
-      <li class="key black" data-key="g"><span>g</span></li>
-      <li class="key white" data-key="y"><span>y</span></li>
-      <li class="key black" data-key="h"><span>h</span></li>
-      <li class="key white" data-key="u"><span>u</span></li>
-      <li class="key black" data-key="j"><span>j</span></li>
-      <li class="key white" data-key="k"><span>k</span></li>
-      <li class="key black" data-key="o"><span>o</span></li>
-      <li class="key white" data-key="l"><span>l</span></li>
-      <li class="key black" data-key="p"><span>p</span></li>
-      <li class="key white" data-key=";"><span>;</span></li>
-    </ul>
-
-  </div>
-
-  <script defer src="src/scripts/engine.js"></script>
-</body>
-
+    <script defer src="src/scripts/engine.js"></script>
+    <script defer src="src/scripts/changeColor.js"></script>
+  </body>
 </html>
